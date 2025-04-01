@@ -21,7 +21,7 @@ def image_to_base64(image_path):
 
 
 # Example usage
-image_path = r"C:\Users\e430275.SPI-GLOBAL\Desktop\openwebui\chatcomp_vs_responses\images\Screenshot(24).png"
+image_path = "../images/Screenshot(24).png"
 
 
 client = OpenAI(
@@ -85,7 +85,7 @@ response1 = client.responses.create(
 
 print(response1.output)
 
-image_path1 = r"C:\Users\e430275.SPI-GLOBAL\Desktop\openwebui\chatcomp_vs_responses\images\Screenshot(25).png"
+image_path1 = "../images/Screenshot(25).png"
 
 response2 = client.responses.create(
     model="computer-use-preview",
@@ -116,7 +116,7 @@ print(response2.output)
 
 # ------------------------------------------------------------------------
 
-image_path2 = r"C:\Users\e430275.SPI-GLOBAL\Desktop\openwebui\chatcomp_vs_responses\images\Screenshot(26).png"
+image_path2 = "../images/Screenshot(26).png"
 
 response3 = client.responses.create(
     model="computer-use-preview",
